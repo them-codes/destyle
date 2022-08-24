@@ -1,10 +1,10 @@
 {
   "name": "@them-codes/destyle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dynamic Stylesheet for Next.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version && git push -u origin main --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/them-codes/destyle/issues"
   },
-  "homepage": "https://github.com/them-codes/destyle#readme"
+  "homepage": "https://github.com/them-codes/destyle#readme",
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "standard-version": "^9.5.0"
+  },
+  "dependencies": {
+    "@hookstate/core": "^4.0.0-rc21",
+    "react": "^18.2.0"
+  }
 }
